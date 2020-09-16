@@ -9,6 +9,10 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
+    def apikeyPropertiesFile = rootProject.file("apikey.properties")
+    def apikeyProperties = new Properties()
+    apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+
     defaultConfig {
         applicationId "com.melaniedura.imagesearchapp"
         minSdkVersion 21
@@ -18,7 +22,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "UNSPLASH_ACCESS_KEY", unsplash_access_key)
+        buildConfigField("String", "UNSPLASH_ACCESS_KEY", apikeyProperties['unsplash_access_key'])
     }
 
     buildTypes {
