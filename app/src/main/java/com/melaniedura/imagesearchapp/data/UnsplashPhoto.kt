@@ -1,4 +1,4 @@
-package com.melaniedura.imagesearchapp
+package com.melaniedura.imagesearchapp.data
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

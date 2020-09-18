@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/button_retry"
         android:layout_centerHorizontal="true"
-        android:text="Results could not be loaded"
+        android:text="@string/error_loading_results"
         android:visibility="gone"
         tools:visibility="visible" />
 
@@ -35,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Retry"
+        android:text="@string/retry"
         android:visibility="gone"
         tools:visibility="visible" />
 
@@ -44,7 +45,7 @@
         android:id="@+id/textViewEmpty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No results found for this query"
+        android:text="@string/no_results"
         android:layout_centerInParent="true"
         android:visibility="gone"
         tools:visibility="visible" />
