@@ -3,4 +3,5 @@
     <string name="error_loading_results">Results could not be loaded</string>
     <string name="retry">Retry</string>
     <string name="no_results">No results found for this query</string>
+    <string name="search_title_menu">Search</string>
 </resources>
