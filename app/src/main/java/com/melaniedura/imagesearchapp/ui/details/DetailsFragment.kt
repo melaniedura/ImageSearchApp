@@ -4,4 +4,5 @@ import androidx.fragment.app.Fragment
 import com.melaniedura.imagesearchapp.R
 
 class DetailsFragment : Fragment(R.layout.fragment_details) {
+    //todo: implement - test commit
 }
